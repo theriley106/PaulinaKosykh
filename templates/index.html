@@ -1,57 +1,37 @@
-<html>
-   <style>
-      .center-screen {
-      height: 200px;
-      width: 400px;
-      position: fixed;
-      left: 50%;
-      margin-top: -100px;
-      margin-left: -200px;
-      }
+<html lang="en"><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<title>Barak Widawsky</title>
+
+	<link rel="icon" type="image/png" href="http://barakwidawsky.com/favicon.png">
+	<link rel="stylesheet" href="http://barakwidawsky.com/build/bundle.css">
+
+	<style>
+      .rounded {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
    </style>
-   <head>
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-   </head>
-   {% if result == true %}
-   <body style="background: #00ff3a;">
-      <div style="background: #00ff3a; 
-         top: 30%;" class="center-screen">
-      <center>
-         <h1 style="color:#004a9a;font-size:80px;" id="result">YES<br>&#128640; &#128200; &#129297;</h1>
-      </center>
-      {% else %}
-      <body style="background:white">
-         <div style="background: white; 
-            top: 30%;" class="center-screen">
-            <center>
-               <h1 style="color:#004a9a;font-size:80px;" id="result">NO<br>&#128532;</h1>
-            </center>
-            {% endif %}
-            <table class="table table-dark table-hover" style="
-               margin-top: 10%;
-               ">
-               <thead>
-                  <tr>
-                     <th scope="col">#</th>
-                     <th scope="col">Name</th>
-                     <th scope="col">Net Worth</th>
-                  </tr>
-               </thead>
-               <tbody>
-                  {% for person in ranking %}
-                  <tr>
-                     <th scope="row">{{person.rank}}</th>
-                     <td><a style="color: white;" target="_blank" href="https://www.forbes.com/profile/{{person.uri}}">{{person.personName}}</a></td>
-                     <td>{{person.finalWorth | currencyFormat}}</td>
-                  </tr>
-                  {% endfor %}
-               </tbody>
-            </table>
-         </div>
-   </body>
-   <footer class="page-footer font-small blue fixed-bottom">
-      <div class="text-center py-3">
-         <a href="https://github.com/theriley106/IsElonMuskTheRichestPersonInTheWorld" target="_blank">View on Github</a>
-      </div>
-   </footer>
-</html>
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.993.0" data-gr-ext-installed="">
+
+
+<div class="flex items-center justify-center h-screen"><div class="m-5 md:max-w-xl shadow-lg rounded-md p-5 border-4 border-purple-700 flipthis-highlight">
+   
+   <img src="/static/profile.jpeg" class="rounded">
+   <h2 class="text-2xl pt-5">
+   Hi there! I'm Paulina 👋</h2> <br>
+   <p>I recently graduated from the <a class="text-green-700" href="https://uw.edu" target="_blank">University of Washington</a> with a degree in Environmental Health and Biochemistry.
+         Right now I'm a workplace health and safety specialist at <a class="text-purple-600" href="https://amazon.com" target="_blank">Amazon</a>.
+         <br>
+      </p> <div class="pt-3 flex flex-col"><h3 class="text-center text-xl">Connect with me on the internet 🧑‍💻</h3> <div class="self-center flex space-x-4 pt-2">
+         <a href="https://www.linkedin.com/in/paulina-kosykh-143660178/" target="_blank"><img class="h-10 transition duration-200 transform hover:-translate-y-1" src="/static/linkedin.svg" alt="LinkedIn"></a> 
+         <a href="https://www.instagram.com/paulina._.colada/" target="_blank"><img class="h-10 transition duration-200 transform hover:-translate-y-1" src="/static/instagram.svg" alt="Instagram"></a> 
+         <a href="https://www.tiktok.com/@pollyk666" target="_blank"><img class="h-10 transition duration-200 transform hover:-translate-y-1" src="/static/tiktok.svg" alt="TikTok"></a>
+      </div></div></div></div> 
+   </body></html>
