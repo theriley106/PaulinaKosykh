@@ -1,0 +1,7 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "heatmap" } },
+"features": [
+    { "type": "Feature", "properties": { "id": "hv61900626", "mag": 2.91 }, "geometry": { "type": "Point", "coordinates": [ -155.011833, 19.399333, 2.609 ] } }
+]
+}
